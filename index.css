@@ -755,16 +755,19 @@ input {
     border-radius: 50%;
 }
 
+.modal__content {
+    height: calc(100vh - 100px);
+}
+
+.modal {
+    overflow-y: auto;
+}
+
 @media (max-width: 720px) {
     .modal  {
         border-radius: 17px;
         max-width: 290px;
         overflow-y: auto;
-        height: 704px;
-    }
-
-    .modal__content {
-        height: 100vh;
     }
 
     .bottom-figure {
