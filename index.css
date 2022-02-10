@@ -35,6 +35,7 @@
     position: absolute;
     right: 15%;
     top: 25%;
+    cursor: pointer;
 }
 
 body {
@@ -474,10 +475,7 @@ main {
     .prize--big {
         margin-top: auto;
     }
-    
-    .tablet-only {
-        display: none;
-    }
+
 }
 
 @media (min-width: 720px) and (max-width: 1199px) {
@@ -597,6 +595,10 @@ main {
     .not-desktop {
         display: none;
     }
+
+    .tablet-only {
+        display: none;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -623,8 +625,6 @@ main {
 
 .modal {
     position: relative;
-    border-radius: 36px;
-    background-color: white;
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -644,6 +644,10 @@ main {
 
 .modal-close img {
     pointer-events: none;
+}
+
+.modal__form{
+    background: white;;
 }
 
 .modal__title {
@@ -755,6 +759,12 @@ input {
     .modal  {
         border-radius: 17px;
         max-width: 290px;
+        overflow-y: auto;
+        height: 704px;
+    }
+
+    .modal__content {
+        height: 100vh;
     }
 
     .bottom-figure {
@@ -882,6 +892,7 @@ input {
 
     .wrapper {
         height: 100%;
+        overflow: hidden;
     }
 }
 
@@ -889,14 +900,16 @@ input {
 
 .swiper {
     width: 100%;
-    height: 360px;
+    height: 412px;
     margin: 0 auto;
+    max-width: 340px;
+    overflow: initial !important;
 }
 
 .swiper-slide {
     display: flex;
     width: 200px;
-    height: 360px !important;
+    height: 344px !important;
     justify-content:center;
     transition: transform 0.3s;
 }
@@ -922,7 +935,7 @@ input {
 .swiper-image {
     position: absolute;
     max-width: 130px;
-    top: 0px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
@@ -930,7 +943,6 @@ input {
 
 .swiper-card {
     margin-top: auto;
-    margin-bottom: 40px;
     padding: 10px;
     border-radius: 19px;
     background-color: white;
@@ -959,7 +971,7 @@ input {
 }
 
 .swiper-slide-active {
-    transform: scale(1) !important;
+    transform: scale(1.2) !important;
 }
 
 .slider-button {
@@ -967,6 +979,10 @@ input {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.play-button > img {
+    margin-bottom: 5px;
 }
 
 .slider-button .button {
@@ -984,7 +1000,7 @@ input {
 }
 
 .swiper-pagination {
-    bottom: 10px !important;
+    bottom: 0px !important;
 }
 
 .swiper-pagination-bullet {

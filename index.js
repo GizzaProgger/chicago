@@ -11,19 +11,24 @@ document.addEventListener('click', function(e) {
         modal.style.display = "none";
         body.style.overflow = "visible";
     }
+
+    if (e.target.classList.contains('overlay')) {
+        modal.style.display = "none";
+        body.style.overflow = "visible";
+    }
 })
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1.5,
-    spaceBetween: -50,
+    spaceBetween: 0,
     centeredSlides: true,
     preventClicks:true,
     loop:true, 
     pagination: {
         el: '.swiper-pagination',
     },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
 })
