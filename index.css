@@ -495,7 +495,7 @@ main {
 
     .prizes {
         justify-content: space-around;
-        width: 100%;
+        width: 672px;
         margin-top: 150px;
         flex-wrap: wrap;
     }
@@ -581,7 +581,7 @@ main {
     }
 
     .play-button {
-        top: 21%;
+        top: 25%;
     }
 
     .play-button img {
