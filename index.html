@@ -12,6 +12,16 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <title>Chicaga</title>
+    <script>
+        function resizeIframe(obj) {
+            console.log(obj)
+            var body = obj.body,
+            html = document.documentElement;
+            var height = Math.max( body.scrollHeight, body.offsetHeight, 
+            html.clientHeight, html.scrollHeight, html.offsetHeight );
+          obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+      </script>
 </head>
 <body>
     <main>
@@ -195,6 +205,18 @@
                                 <input type="text" data-name="Телефон"  name="phone" id="phone" placeholder="Телефон">
                             </div>
                             <div class="modal__input select">
+                                <select class="custom-select" name="school" >
+                                    <option value="">Выберите школу</option>
+                                    <option value="Школа в Купчино">CHICAGA в Купчино</option>
+                                    <option value="Школа на Ленинском">CHICAGA на Ленинском</option>
+                                    <option value="Школа на Академической">CHICAGA на Академической</option>
+                                    <option value="Школа на Звездной">CHICAGA на Звездной</option>
+                                    <option value="Школа на Ладожской/Большевиков">CHICAGA на Ладожской/Большевиков</option>
+                                    <option value="Школа в Озерках">CHICAGA в Озерках</option>
+                                    <option value="Школа на Петроградской">CHICAGA на Петроградской</option>
+                                    <option value="Школа на Владимирской">CHICAGA на Владимирской</option>
+                                    <option value="Online школа">Online школа</option>
+                                </select>
                                 <input type="text" data-name="school" name="school" id="school" placeholder="Школа для бесплатного пробного урока">
                             </div>
                             <div class="modal__button">
