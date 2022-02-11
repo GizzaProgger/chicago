@@ -502,11 +502,12 @@ main {
 
     .prize__wrapper {
         width: 213px;
-        height: 242px;
+        height: 257px;
     }
 
     .prize {
         padding: 8px;
+        height: 100%;
     }
 
     .prize:first-child {
@@ -530,7 +531,7 @@ main {
     }
 
     .prize__guy {
-        max-width: 60%;
+        top: -101px;
     }
 
     .prize--big, .prize--middle {
@@ -542,6 +543,8 @@ main {
         padding: 8px;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         border-radius: 15px;
     }
 
@@ -903,7 +906,7 @@ input {
 
 .swiper {
     width: 100%;
-    height: 412px;
+    height: 392px;
     margin: 0 auto;
     max-width: 340px;
     overflow: initial !important;
@@ -912,7 +915,7 @@ input {
 .swiper-slide {
     display: flex;
     width: 200px;
-    height: 344px !important;
+    height: 324px !important;
     justify-content:center;
     transition: transform 0.3s;
 }
@@ -937,8 +940,7 @@ input {
 
 .swiper-image {
     position: absolute;
-    max-width: 130px;
-    top: 30px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
@@ -952,7 +954,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 220px;
+    height: 200px;
     z-index: 5;
 }
 
