@@ -681,7 +681,8 @@ main {
     margin-bottom: 10px;
 }
 
-input {
+input, .select {
+    font-family: inherit;
     width: 100%;
     border: 1px solid #B04D58;
     box-sizing: border-box;
@@ -690,7 +691,41 @@ input {
     font-size: 13px;
     line-height: 30px;
     outline: none;
+    color: #B04D58;
+    font-weight: 500;
 }
+
+input::placeholder {
+    color: #D09AA0;
+    font-weight: 500;
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    z-index: 1;
+    outline: none;
+    color: #B04D58;
+    font-weight: 500;
+}
+
+option {
+    padding: 10px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
 
 .modal__button button {
     width: 100%;
@@ -803,6 +838,12 @@ input {
         padding: 10px 20px;
         font-size: 10px;
         line-height: 15px;
+    }
+
+    .select {
+        font-size: 10px;
+        line-height: 15px;
+        padding: 10px 20px;
     }
 
     .modal__button button {
